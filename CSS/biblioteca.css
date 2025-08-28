@@ -1,0 +1,89 @@
+/* Biblioteca - Estilo principal */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    padding: 40px 30px 30px 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus {
+    border: 1.5px solid #fda085;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px rgba(253, 160, 133, 0.15);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #fda085 0%, #f6d365 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.result {
+    margin-top: 30px;
+    padding: 18px;
+    background: #f9fafb;
+    border-radius: 10px;
+    border: 1px solid #f3e6e6;
+    color: #444;
+    font-size: 1.05rem;
+    min-height: 40px;
+    box-shadow: 0 1px 4px rgba(253, 160, 133, 0.07);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 8px 18px 8px;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+}
